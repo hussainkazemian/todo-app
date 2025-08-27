@@ -34,8 +34,8 @@ export function AddItemForm({ onNewItem }) {
                     value={newItem}
                     onChange={(e) => setNewItem(e.target.value)}
                     type="text"
-                    placeholder="New Item"
-                    aria-label="New item"
+                    placeholder="Lisää tänne"
+                    aria-label="Lisää tänne"
                 />
                 <Button
                     type="submit"
@@ -43,7 +43,7 @@ export function AddItemForm({ onNewItem }) {
                     disabled={!newItem.length}
                     className={submitting ? 'disabled' : ''}
                 >
-                    {submitting ? 'Adding...' : 'Add Item'}
+                    {submitting ? 'Adding...' : 'Add item'}
                 </Button>
             </InputGroup>
         </Form>
